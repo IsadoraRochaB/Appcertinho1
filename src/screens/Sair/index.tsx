@@ -12,7 +12,7 @@ export default function Sair() {
         async function logout() {
             try {
                 await signOut();
-            } 
+            }
             catch (error) {
                 const err = error as AxiosError;
                 const data = err.response?.data as IUser;
@@ -22,7 +22,7 @@ export default function Sair() {
                         message = `${message} ${value}`;
                     }
                 }
-            Alert.alert(`${data.message} ${message}`);
+                Alert.alert(`${data.message} ${message}`);
             }
         }
         logout();
