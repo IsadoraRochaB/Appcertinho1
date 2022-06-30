@@ -10,7 +10,6 @@ import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import { useAuth } from "../../hook/auth";
 import {TextInput,} from "react-native";
 
-import Navigation from "../../navigations";
 
 export default function Perfil ({navigation}: LoginTypes) {
   const {user} = useAuth();
@@ -20,9 +19,6 @@ export default function Perfil ({navigation}: LoginTypes) {
   }
   function handleLogin() {
     navigation.navigate("Login");
-  }
-  function handleMap() {
-    navigation.navigate("Map");
   }
 
 
