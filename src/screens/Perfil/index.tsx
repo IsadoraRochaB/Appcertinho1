@@ -78,8 +78,8 @@ export default function Perfil ({navigation}: LoginTypes) {
       </View>
 
       <View style={styles.input}>
-        <ButtonComp title="Publicar" type="black" onPress={handleSignIn} />
-        <ButtonComp title="Voltar" type="grey" onPress={handleLogin} />  
+        <ButtonComp title="Salvar" type="black" onPress={handleSignIn} />
+        <ButtonComp title="Publicar" type="grey" onPress={handleLogin} />  
       </View>     
     </View>
   );

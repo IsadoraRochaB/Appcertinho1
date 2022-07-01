@@ -4,7 +4,7 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
 
   container: {
-    backgroundColor: colors.grey1,
+    backgroundColor: colors.isa,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   image: {
     padding: 5,
     borderWidth: 2,
-    borderColor: colors.black,
+    borderColor: colors.marrom,
     borderRadius: 80,
 
   },
@@ -33,14 +33,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.black,
+    borderColor: colors.marrom,
     backgroundColor: colors.white,
     borderRadius: 20,
   },
 
   icon: {
     fontSize: 24,
-    color: colors.grey,
+    color: colors.blue,
     padding: 10
   },
 

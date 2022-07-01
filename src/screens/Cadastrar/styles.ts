@@ -4,7 +4,7 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
 
 container: {
-    backgroundColor: colors.grey1,
+    backgroundColor: colors.white,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -17,7 +17,7 @@ container: {
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: colors.black,
+    color: colors.marrom,
     marginBottom: 20,
   },
   formRow: {
@@ -25,13 +25,13 @@ container: {
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.black,
+    borderColor: colors.marrom,
     backgroundColor: colors.white,
     borderRadius: 20,
   },
   icon: {
     fontSize: 24,
-    color: colors.grey,
+    color: colors.black,
     padding: 10
   },
   input: {

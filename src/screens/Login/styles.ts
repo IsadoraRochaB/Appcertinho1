@@ -3,7 +3,7 @@ import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.grey1,   //#708090           //colors.lightGrey,  
+    backgroundColor: colors.white,   //#708090           //colors.lightGrey,  
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
 
   butom: {
-    borderColor: colors.grey,
+    borderColor: colors.marrom,
     borderRadius: 90,
   },
   
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: colors.black,
+    color: colors.marrom,
     marginBottom: 20,
   },
   formRow: {
@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     backgroundColor: colors.white,
-    borderColor: colors.black,
+    borderColor: colors.marrom,
     borderRadius: 20,
   },
   icon: {
     fontSize: 24,
-    color: colors.grey,
+    color: colors.black,
     padding: 10
   },
   input: {
