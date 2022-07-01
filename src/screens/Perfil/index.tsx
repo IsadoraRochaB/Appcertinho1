@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, Text } from "react-native";
 import styles from "./styles";
 //import ButtonC from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
@@ -27,7 +27,8 @@ export default function Perfil ({navigation}: LoginTypes) {
 
     <View style={styles.container}>
       <View style={styles.image}> 
-      <Image source={require("../../assets/Union.png")} />
+      <Image source={{ uri: user?.profile_photo_url }} style={styles.img} />
+      <Text style={styles.link}>{user?.name}</Text>
       </View>
 
 

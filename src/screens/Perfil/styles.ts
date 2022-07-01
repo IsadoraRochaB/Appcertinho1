@@ -9,13 +9,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image: {
-    padding: 5,
-    borderWidth: 2,
-    borderColor: colors.marrom,
-    borderRadius: 80,
-
-  },
 
   local: {
     margin: 10,
@@ -56,7 +49,18 @@ const styles = StyleSheet.create({
     fontSize: 18,
     padding: 5,
     width: "80%"
-  }
+  },
+  link: {
+    fontSize: 50,
+    color: colors.blue
+    },
+  img: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    borderWidth: 2,
+    borderColor: colors.marrom,
+    },
 
 
 
