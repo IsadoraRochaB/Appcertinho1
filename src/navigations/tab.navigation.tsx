@@ -1,8 +1,9 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { ChatScreen, PerfilScreen, MapScreen, SairScreen } from "../screens";
-import { Ionicons } from "@expo/vector-icons";
+import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode } from "../screens";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../styles/colors";
+import { color } from "react-native-reanimated";
 
 const Tab = createBottomTabNavigator();
 
@@ -48,12 +49,20 @@ export default function TabNavigation() {
         name="Sair"
         component={SairScreen}
         options={{
-          tabLabel: "Sair",
           tabBarIcon: () => (
             <Ionicons name="exit" size={24} color={colors.white} />
           ),
         }}
       />
+      <Tab.Screen
+      name="QrCode"
+      component={qrCode}
+      options={{
+        tabBarIcon: () => (
+          <MaterialCommunityIcons name= "qrcode-scan" size={24} color={colors.white} />
+        ),
+      }}
+    />
     </Tab.Navigator>
   );
 }
