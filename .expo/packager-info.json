@@ -2,7 +2,7 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://yt-pby.anonymous.isaapp.exp.direct",
-  "packagerNgrokUrl": "https://yt-pby.anonymous.isaapp.exp.direct",
-  "ngrokPid": 12077
+  "expoServerNgrokUrl": "https://yt-pby.anonymous.appisa.exp.direct",
+  "packagerNgrokUrl": "https://yt-pby.anonymous.appisa.exp.direct",
+  "ngrokPid": 6056
 }
