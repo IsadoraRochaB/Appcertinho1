@@ -1,92 +1,100 @@
-import {StyleSheet} from 'react-native'
-import colors from '../../styles/colors'
+import {Dimensions, StyleSheet} from 'react-native';
+import colors from '../../styles/colors';
 
 const styles = StyleSheet.create({
-    comtainer: {
-        flex: 1,
+    container:{
+        flex:1,
     },
     startOver: {
-        flex: 1,
-        backgroundColor: colors.white,
+        flex:1,
+        backgroundColor: colors.blue,
         justifyContent: "center",
         alignItems: "center",
     },
-    buttonStartOver: {
-        width: 130,
-        borderRadios: 4,
-        backgroundColor: colors.secondary,
+    buttonStartOver:{
+        width:130,
+        borderRadius: 4,
+        backgroundColor: colors.black,
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
         height: 40,
     },
-    textStartOver: {
+    textStartOver:{
         color: colors.white,
         fontWeight: "bold",
         textAlign: "center",
     },
-    collumnPreviewVisible: {
+    collumnPreviewVisible:{
         flex: 1,
         flexDirection: "column",
         padding: 15,
         justifyContent: "flex-end",
     },
-    rowPreviewVisible: {
-        width: 130,
+    rowPreviewVisible:{
+        flexDirection: "row",
+        justifyContent: "space-between",
+    },
+    buttonPreviewVisible:{
+        width:130,
         height: 40,
         alignItems: "center",
         borderRadius: 4,
     },
-    buttonTop: {
+    textPreviewVisible:{
+        color: colors.white,
+        fontSize: 20,
+    },
+    buttonSavePhoto: {
+        width:130,
+        height: 40,
+        alignItems: "center",
+        borderRadius: 4,
+    },
+    buttonTop:{
         flex: 1,
         backgroundColor: "transparent",
         flexDirection: "row",
     },
-    buttonTopPosition: {
-        position: "absolute"
+    buttonTopPosition:{
+        position: "absolute",
         top: "5%",
         right: "5%",
     },
-    buttonSavePhoto: {
-        width: 130,
-        height: 40,
-        alignItems: "center",
-        borderRadius: 4,
-    },
-    textClose: {
+    textClose:{
         color: colors.white,
         fontSize: 20,
     },
-    buttonFlip: {
+    buttonFlip:{
         position: "absolute",
         top: "5%",
-        left:"5%",,
+        right: "5%",
     },
     textFlip: {
         fontSize: 18,
         marginBottom: 10,
         color: colors.white,
     },
-    viewTakePicture: {
+    viewTakePicture:{
         position: "absolute",
         bottom: 0,
         flexDirection: "row",
-        flex: 1,
+        flex:1,
         width: "100%",
         padding: 20,
         justifyContent: "space-between",
     },
-    positionTakePicture: {
+    positionTakePicture:{
         alignSelf: "center",
         flex: 1,
         alignItems: "center",
     },
-    buttonTakePicture: {
+    buttonTakePicture:{
         width: 70,
         height: 70,
         bottom: 0,
         borderRadius: 50,
-        backgroundColor: colors.white,
+        backgroundColor:colors.white,
     },
 });
 

@@ -5,4 +5,6 @@ export { default as ChatScreen } from "./Chat"
 export { default as MapScreen } from "./Map"
 export { default as SairScreen } from "./Sair"
 export { default as qrCode } from "./QrCode"
+export {default as CameraScreen} from "./Camera"
+export {default as ArquivoScreen} from "./Arquivo"
 
