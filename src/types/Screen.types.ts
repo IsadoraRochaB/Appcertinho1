@@ -10,3 +10,13 @@ type LoginScreenNavigationProp = StackNavigationProp<LoginStackParamList, 'Login
 export type LoginTypes = {
   navigation: LoginScreenNavigationProp
 }
+
+// Chat Stake 
+export type ChatStackParamLIst ={
+  Chat: undefined
+  EnviarMensagem: undefined
+}
+type ChatScreenNavigationProp = StackNavigationProp<ChatStackParamLIst, 'Chat'>
+export type ChatTypes ={
+  navigation: ChatScreenNavigationProp
+}

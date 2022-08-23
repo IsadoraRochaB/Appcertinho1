@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
   topicos: {
     flexDirection: "row",
   },
+  img: {
+    width: 100,
+    height: 100,
+  },
   topic: {
     backgroundColor: colors.blue,
     margin: 5,

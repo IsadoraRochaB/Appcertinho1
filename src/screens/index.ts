@@ -8,3 +8,4 @@ export { default as qrCode } from "./QrCode"
 export {default as CameraScreen} from "./Camera"
 export {default as ArquivoScreen} from "./Arquivo"
 
+

@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import colors from "../../styles/colors";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -7,6 +8,24 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  button: {
+    position: "absolute",
+    bottom: 0,
+    right: 0,
+    backgroundColor:
+    colors.black,
+    width: 50,
+    height: 50,
+    borderRadius: 50,
+    display: "flex",
+    justifyContent: "center",
+    alignContent: "center",
+  },
+  buttonText: {
+    color: colors.white,
+    fontSize: 28,
+    fontWeight: "bold",
   },
   rowSearch: {
     flexDirection: 'row',
