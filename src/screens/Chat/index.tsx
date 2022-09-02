@@ -1,5 +1,3 @@
-
-
 import React, {useEffect, useState} from "react";
 import {
 View,
@@ -39,28 +37,20 @@ const [mensagem, setMensagem] = useState <IMensagemState[]>([]);
         {isLoading ? (
         <LoadingComp />
         ) : (
-        <ImageBackground 
-        source={require("../../assets/fundo.png")}
-        style={styles.container}>
-        >  
             <SafeAreaView styles={styles.container}>
                 <View style={styles.rowSearch}>
-                  <FontAwesome5 name="search" style={styles.icon} />
-                  <TextInput placeholder="Pesquisar chat" />
+                    <FontAwesome5 name="search" style={styles.icon} />
+                    <TextInput placeholder="Pesquisar chat" />
                 </View>
                 {mensagem.length > 0 && (
-                  <FlatList
-                    data={mensagem} 
-                    renderItem={renderItem}    
-                    keyExtractor={(item)=> item.id}
-                  />
-                )}
-                <TouchableOpacity style={styles.button} onPress={handleChat}>
-                    <Text style={styles.buttonText}>+</Text>
-                </TouchableOpacity>
+                <FlatList data={mensagem} renderItem={renderItem} keyExtractor={(item)=> item.id}
+                    />
+                    )}
+                    <TouchableOpacity style={styles.button} onPress={handleChat}>
+                        <Text style={styles.buttonText}>+</Text>
+                    </TouchableOpacity>
             </SafeAreaView>
-        </ImageBackground>
         )}
     </>
-  );
+    );
 }

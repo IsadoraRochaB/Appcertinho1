@@ -7,7 +7,7 @@ import {format} from "date-fns";
 
 export default function Card({ data }: IMensagemState) {
   return (
-    <View style={styles.cardOrange}>
+    <View style={styles.card}>
       <Text>
         {data.user.name} -{" "}
         {format (new Date(data.created_at), "dd/MM/yyyy HH:mm:ss")}
@@ -19,7 +19,7 @@ export default function Card({ data }: IMensagemState) {
         <Image source={{uri: data.imagem}} style={styles.img} />
         <View style={styles.topicos}>
           {data.topico.map((i) => (
-            <View key={i.id} style={styles.topic}>
+            <View key={i.id} style={styles.topicos}>
               <Text>{i.topico}</Text>
             </View>
           ))}
