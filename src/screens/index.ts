@@ -8,6 +8,7 @@ export { default as qrCode } from "./QrCode"
 export {default as CameraScreen} from "./Camera"
 export {default as ArquivoScreen} from "./Arquivo"
 export {default as EnviarMensagemScreen} from "./EnviarMensagem"
+export {default as AudioVideoScreen} from "./VideoAudio"
 
 
 

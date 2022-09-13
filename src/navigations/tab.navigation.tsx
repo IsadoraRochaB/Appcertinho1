@@ -1,8 +1,9 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen } from "../screens";
+import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen, AudioVideoScreen } from "../screens";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../styles/colors";
+import { Feather } from '@expo/vector-icons'; 
 import { color } from "react-native-reanimated";
 
 const Tab = createBottomTabNavigator();
@@ -83,6 +84,15 @@ export default function TabNavigation() {
           size={24}
           color={colors.white}
           />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="VideoAudio"
+      component={AudioVideoScreen}
+      options={{
+        tabBarIcon: () => (
+          <Feather name="music" size={24} color="white" />
         ),
       }}
     />
