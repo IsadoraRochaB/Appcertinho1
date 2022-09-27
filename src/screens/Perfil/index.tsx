@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { View, Image, Text } from "react-native";
 import styles from "./styles";
 //import ButtonC from "../../components/Button";
@@ -9,21 +9,36 @@ import { ButtonComp, CardSocialComp } from "../../components";
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import { useAuth } from "../../hook/auth";
 import {TextInput,} from "react-native";
+import * as Notifications from 'expo-notifications';
+import {registerForPushNotificationsAsync} from "../../services/data/Push";
 
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+  shouldShowAlert: true,
+  shouldPlaySound: false,
+  shouldSetBadge: false,
+}),
+});
 
-export default function Perfil ({navigation}: LoginTypes) {
-  const {user} = useAuth();
-  async function handleSignIn (){
-    navigation.navigate("Login");
-    console.log("Cadastrar");
-  }
-  function handleLogin() {
-    navigation.navigate("Login");
-  }
+export default function Perfil() {
+  const { user } = useAuth();
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    if (user&& user.profile_photo_url) {
+      setIsLoading(false);
+    }
+  }, [user]);
+
+  useEffect(() => {
+    async function fetchToken() {
+      const token = await registerForPushNotificationsAsync()
+      console.log(token)
+    }
+    fetchToken()
+  }, []);
 
   return (
-
 
     <View style={styles.container}>
       <View style={styles.image}> 
@@ -78,9 +93,7 @@ export default function Perfil ({navigation}: LoginTypes) {
             />
       </View>
 
-      <View style={styles.input}>
-        <ButtonComp title="Salvar" type="black" onPress={handleSignIn} />
-        <ButtonComp title="Publicar" type="grey" onPress={handleLogin} />  
+      <View style={styles.input}> 
       </View>     
     </View>
   );
