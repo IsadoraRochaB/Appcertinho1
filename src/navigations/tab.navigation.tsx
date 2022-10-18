@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen, AudioVideoScreen } from "../screens";
+import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen, AudioVideoScreen, AcelerometroScreen } from "../screens";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../styles/colors";
 import { Feather } from '@expo/vector-icons'; 
@@ -74,6 +74,16 @@ export default function TabNavigation() {
           ),
         }}
     />
+     <Tab.Screen
+        name="Acelerometro"
+        component={AcelerometroScreen}
+        options={{
+          tabBarIcon: () => (
+            <Ionicons name="game-controller" 
+            size={24} color="white" />
+          ),
+        }}
+      />
     <Tab.Screen
       name="Arquivos"
       component={ArquivoScreen}
