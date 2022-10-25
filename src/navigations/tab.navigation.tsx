@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen, AudioVideoScreen, AcelerometroScreen } from "../screens";
+import { ChatScreen, PerfilScreen, MapScreen, SairScreen, qrCode, CameraScreen, ArquivoScreen, AudioVideoScreen, AcelerometroScreen, PedometroScreen } from "../screens";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import colors from "../styles/colors";
 import { Feather } from '@expo/vector-icons'; 
@@ -67,6 +67,16 @@ export default function TabNavigation() {
     <Tab.Screen
         name="Camera"
         component={CameraScreen}
+        options={{
+          tabBarIcon: () => (
+            <Ionicons name="camera" 
+            size={24} color={colors.white} />
+          ),
+        }}
+    />
+    <Tab.Screen
+        name="Pedometro"
+        component={PedometroScreen}
         options={{
           tabBarIcon: () => (
             <Ionicons name="camera" 
